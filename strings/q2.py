@@ -1,8 +1,8 @@
 
 marks = []
 for i in range(5):
-    m = float(input(f"Enter mark {i+1}: "))
-         marks.append(m)
+    m = float(input(f"Enter mark {i+1}: ")) 
+    marks.append(m)
 
 total = 0
 highest = marks[0]               
