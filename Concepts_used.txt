@@ -1,0 +1,38 @@
+PYTHON CONCEPTS USED IN STUDENT MANAGEMENT SYSTEM
+=================================================
+
+1. Variables and Data Types
+   - Used strings (str) to store student names and roll numbers.
+   - Used floats (float) to store subject marks and calculate decimal averages.
+
+2. Lists and Dictionaries
+   - Stored each individual student's record as a dictionary with keys: "roll", "name", and "marks".
+   - Stored all student dictionaries inside a single list to easily loop through, search, and display records.
+
+3. String Manipulation
+   - Used .strip() to remove extra spaces and newline characters from user inputs and file lines.
+   - Used .split("|") and .split(",") to separate stored text records back into structured data, and .join() to format data before saving.
+
+4. Conditional Statements (if-elif-else)
+   - Used to route the user's menu selection (options 1 to 5) to the matching function.
+   - Used to validate empty inputs, check for duplicate roll numbers, and verify if a searched record exists.
+
+5. Loops (while and for)
+   - Used an infinite while True loop to keep the interactive command-line menu running until the user selects Exit.
+   - Used for loops to read lines from the file, display all student records, and search for a specific roll number.
+
+6. Functions
+   - Organized the application into modular, reusable functions:
+     * load_students()     -> Reads and parses records from students.txt
+     * add_student()       -> Validates input and appends a new student
+     * view_students()     -> Displays all saved student records
+     * search_student()    -> Finds and displays a student by roll number
+     * calculate_average() -> Computes the average marks for a student
+     * main()              -> Controls the main menu loop
+
+7. File Handling
+   - Used Python's with open() statement in read mode ("r") to load existing records and append mode ("a") to save new records permanently in students.txt across program restarts.
+
+8. Exception Handling (try-except)
+   - Handled ValueError when converting mark inputs to float so non-numeric input prints a warning instead of crashing.
+   - Handled FileNotFoundError so running View, Search, or Average before students.txt exists displays a clean message instead of an error.

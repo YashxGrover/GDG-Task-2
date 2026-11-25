@@ -1,0 +1,4 @@
+101|Aarav Sharma|85.0,90.0,78.0
+102|Priya Verma|92.0,88.0,95.0
+103|Rohan Gupta|76.0,81.5,84.0
+104|Ananya Singh|95.0,91.0,89.5

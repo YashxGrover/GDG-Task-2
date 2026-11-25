@@ -7,7 +7,7 @@ def load_students():
         with open(FILE_NAME, "r") as file:
             for line in file:
                 line = line.strip()
-                if not line:  # Skip empty lines
+                if not line:  
                     continue
                 roll, name, marks_str = line.split("|")
                 marks = [float(m) for m in marks_str.split(",")]
@@ -17,7 +17,7 @@ def load_students():
                     "marks": marks
                 })
     except FileNotFoundError:
-        # Return an empty list if the file hasn't been created yet
+       
         return []
     return students
 
@@ -29,7 +29,7 @@ def add_student():
         print("Roll number cannot be empty.")
         return
 
-    # Prevent duplicate roll numbers
+    
     existing_students = load_students()
     for s in existing_students:
         if s["roll"] == roll:
