@@ -2,3 +2,4 @@
 102|Priya Verma|92.0,88.0,95.0
 103|Rohan Gupta|76.0,81.5,84.0
 104|Ananya Singh|95.0,91.0,89.5
+33|Vansh Rawat|90.0,79.0,77.0
