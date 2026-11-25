@@ -29,7 +29,7 @@ GDG-Task-2/
    ```
 4. Run the program:
    ```bash
-   python3
+   python3 Student_Management_System.py
 
  Student_Management_System.py
    ```
